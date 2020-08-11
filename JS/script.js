@@ -1,11 +1,7 @@
 
-//Standard output
-
 var wrapper = document.querySelector('#wrapper')
 
-wrapper.innerHTML = '<ul>' + movies.map(function (movies) {
-    return '<li><a href="https://www.imdb.com/title/' + movies["imdbID"] + '/?ref_=nv_sr_srsg_0"><img src="' + movies["Poster"] + '" alt=""></img></a></li>';
-}).join('') + '</ul>';
+movieOutput(movies)
 
 //Output filter
 
